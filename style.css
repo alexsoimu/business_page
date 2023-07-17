@@ -138,6 +138,9 @@ p {
   transform: translate(-50%, -50%) scale(1);
   letter-spacing: initial;
 }
+#header .nav-list ul li:hover a {
+  color: crimson;
+}
 #header .hamburger {
   height: 60px;
   width: 60px;
@@ -186,10 +189,10 @@ p {
 #header .hamburger .bar::before {
   bottom: 8px;
 }
-#header .hamburger.active bar::before {
+#header .hamburger.active .bar::before {
   bottom: 0;
 }
-#header .hamburger.active bar::after {
+#header .hamburger.active .bar::after {
   top: 0;
 }
 /* End Header section */
@@ -267,9 +270,9 @@ p {
   margin: 0 auto;
   padding: 100px 0;
 }
-#service .service-top {
-  width: 500px;
-  max-width: 0 auto;
+#services .service-top {
+  max-width: 500px;
+  margin: 0 auto;
 }
 #services .service-bottom {
   display: flex;
@@ -325,12 +328,6 @@ p {
   color: white;
   margin-bottom: 10px;
   text-transform: uppercase;
-}
-#services .service-item p {
-  color: white;
-  text-align: left;
-  font-size: 1.4rem;
-  line-height: 1.9rem;
 }
 #services .service-item p {
   color: white;
